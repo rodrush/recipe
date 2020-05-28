@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container1 {
+  background: url(/images/knife.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Muli", sans-serif;
+}
+.navbar1 {
+  padding-bottom: 1em;
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: 10%;
+  background: rgb(209, 227, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(209, 227, 241, 0.7) 0%,
+    rgb(41, 139, 41, 0.7) 100%
+  );
+}
+.logo1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  margin-left: 2em;
+  margin-top: 0.4em;
+}
+.logo1 img {
+  height: 60px;
+  width: 70px;
+}
+.nav1 {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  font-size: 22px;
+}
+.nav1 li {
+  list-style-type: none;
+  padding-right: 3em;
+  padding-top: 2em;
+  font-weight: 600;
+}
+.nav1 a {
+  text-decoration: none;
+  color: #02130d;
+}
+.nav1 a:hover {
+  text-decoration: underline;
+}
+
+.jumbo {
+  text-align: center;
+  padding-top: 8em;
+  padding-bottom: 7em;
+  color: rgb(0, 0, 0);
+}
+.jumbo h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 13em;
+  margin-right: 13em;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 600;
+}
+.jumbo p {
+  padding-top: 0.3em;
+  font-weight: 600;
+  text-justify: inter-word;
+  font-size: 18px;
+}
+
+.categories {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding-bottom: 2em;
+  padding-top: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 2em;
+}
+.base {
+  font-size: 17px;
+  font-weight: 600;
+}
+.base img {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0);
+}
+.base a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.variety {
+  display: grid;
+  grid-gap: 3em;
+  margin: 2em 1em 2em 3em;
+}
+.variety img {
+  height: 200px;
+  width: 250px;
+  padding-bottom: 1em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+.variety h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+  color: rgb(109, 107, 107);
+  font-family: "Libre Baskerville", serif;
+}
+.variety p {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 800;
+  padding-left: 0.8em;
+  font-family: "Libre Baskerville", serif;
+}
+.variety a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.variety a:hover {
+  text-decoration: underline;
+}
+.random1,
+.random2,
+.random3,
+.random4,
+.random5,
+.random6,
+.random7,
+.random8 {
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+  height: 270px;
+  border-radius: 1em;
+  -webkit-box-shadow: -2px 2px 15px 2px rgba(12, 40, 4, 0.92);
+  box-shadow: -2px 2px 15px 2px rgba(12, 40, 4, 0.92);
+}
+.random1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.random2 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.random3 {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+.random4 {
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+.random5 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.random6 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.random7 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.random8 {
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+
+footer {
+  background: rgb(209, 227, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(209, 227, 241, 0.7) 0%,
+    rgb(41, 139, 41, 0.7) 100%
+  );
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  font-size: larger;
+}
+.creater,
+.social {
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+}
+.social {
+  padding-left: 29em;
+}
