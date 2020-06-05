@@ -106,54 +106,52 @@
 
 .variety {
   display: grid;
-  grid-gap: 3em;
-  margin: 2em 1em 2em 3em;
+  grid-gap: 2em 1em;
+  margin-top: 2em;
+  margin-left: 1.3em;
+  margin-bottom: 2em;
+  color: rgb(255, 255, 255);
 }
+
 .variety img {
-  height: 200px;
-  width: 250px;
-  padding-bottom: 1em;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+  height: 100%;
+  width: 100%;
 }
-.variety h3 {
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 14px;
-  padding-left: 1em;
-  padding-bottom: 0.5em;
-  color: rgb(109, 107, 107);
-  font-family: "Libre Baskerville", serif;
-}
-.variety p {
-  text-align: justify;
-  font-size: 18px;
-  font-weight: 800;
-  padding-left: 0.8em;
-  font-family: "Libre Baskerville", serif;
-}
-.variety a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-.variety a:hover {
-  text-decoration: underline;
-}
-.random1,
-.random2,
-.random3,
-.random4,
-.random5,
-.random6,
-.random7,
-.random8 {
+.item {
+  position: relative;
   background-color: rgb(255, 255, 255);
-  width: 250px;
-  height: 270px;
-  border-radius: 1em;
+  width: 300px;
+  height: 300px;
   -webkit-box-shadow: -2px 2px 15px 2px rgba(12, 40, 4, 0.92);
   box-shadow: -2px 2px 15px 2px rgba(12, 40, 4, 0.92);
 }
+.item a {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Libre Baskerville", serif;
+  top: 50%;
+  left: 47%;
+  transform: scale(0);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.variety * {
+  transition: all 500ms cubic-bezier(0.985, 0.675, 0, 0.61);
+}
+.item:hover {
+  border-radius: 20px;
+  cursor: pointer;
+}
+.item:hover img {
+  opacity: 0.6;
+  border-radius: 20px;
+}
+.item:hover a {
+  transform: scale(1) translate(-50%, -50%);
+  text-decoration: underline;
+}
+
 .random1 {
   grid-row: 1/2;
   grid-column: 1/2;
