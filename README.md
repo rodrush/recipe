@@ -1,2 +1,2 @@
 # recipe
-Simple recipe website
+Simple landing page
